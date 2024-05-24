@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Shoppada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="bar-top">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div id="cartItems"></div>
+        </div>
+
+        <div class="cart-total">
+            <h4>Total: <span id="totalPrice">0</span> PHP</h4>
+            <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+                <input type="hidden" id="cust_order" name="cust_order" value="">
+                <input type="text" name="cust_name" placeholder="Name" required>
+                <input type="text" name="cust_addr" placeholder="Address" required>
+                <input type="email" name="cust_email" placeholder="Email" required>
+                <button type="submit" class="btn btn-primary">Checkout</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container" id="container">
+        <nav>
+            <h2>SHOPPADA</h2>
+            <div class="nav-right">
+                <a href="about.html">About Us</a>
+                <button class="openbtn" onclick="openNav()"><span
+                        class="material-symbols-outlined">shopping_bag</span></button>
+            </div>
+        </nav>
+
+        <div class="content">
+            <section class="section-1">
+
+                <div class="row">
+                    <h3>EARRINGS</h3>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/f2/55/9a/f2559a4b280b41862c3dd7d79b1446b8.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Citrus Blossom Stud Earrings</h5>
+                            <p class="card-text">249 PHP
+                            </p>
+                            <button class="btn btn-primary" onclick="pasok('Citrus Blossom Stud Earrings', 249)">Add
+                                to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/85/80/d8/8580d8c2dc84e171f93fc71696e919ae.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Flower Pearl Dangling Earrings</h5>
+                            <p class="card-text">299 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Vintage Flower Pearl Dangling Earrings', 299)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/dd/31/c4/dd31c4d99fd30114d934f0442f430c65.jpg
+
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Aquamarine Oval Cut Dangling Pearl Earrings</h5>
+                            <p class="card-text">299 PHP
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Aquamarine Oval Cut Dangling Pearl Earrings', 299)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/19/46/85/1946853d906d71fcae4eca4399b69947.jpg
+
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Asymmetrical Gold Artisan Pearl Drop Earrings</h5>
+                            <p class="card-text">249 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Asymmetrical Gold Artisan Pearl Drop Earrings', 249)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/bf/df/8d/bfdf8d759c97d720988e0dea54c4c632.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Seaside Blossom Shell Dangling Earrings</h5>
+                            <p class="card-text">235 PHP
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Seaside Blossom Shell Dangling Earrings 15', 235)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/736x/09/a0/2e/09a02e24ef7ed1c7426a1892ce2bda8e.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Lotus Flower And Water Lily Stud Earrings</h5>
+                            <p class="card-text">299 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Flower And Water Lily Stud Earrings', 299)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/4e/d5/05/4ed505fd145a0bbde98d7f2d801d9b68.jpg
+"
+                            class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali Waterfall Earrings Champagne Mix</h5>
+                            <p class="card-text">255 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Bali Waterfall Earrings Champagne Mix ', 255 )">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/564x/0e/bf/79/0ebf7991b962bceba8b62850ebd47e0e.jpg
+"
+                            class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Oceanic Pearl Drop Earrings</h5>
+                            <p class="card-text">249 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Oceanic Pearl Drop Earrings', 249 )">Add
+                                to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="food">
+
+                <div class="row">
+                    <h3>NECKLACE</h3>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/1a/32/1e/1a321e3231506a264f08f7318115f226.jpg
+
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Seashell Pendant Necklace</h5>
+                            <p class="card-text">249 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Seashell Pendant Necklace', 249)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/80/30/9a/80309ad4c19f30be8e02f5966da46fda.jpg
+
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiny Chrysanthemum Pendant Necklace</h5>
+                            <p class="card-text">299 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Tiny Chrysanthemum Pendant Necklace', 299)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/b5/85/a4/b585a4de99b012d43d36ee0c3cfdd6dd.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Coastal Girl Necklace</h5>
+                            <p class="card-text">275 PHP
+                            </p>
+                            <button class="btn btn-primary" onclick="pasok('Coastal Girl Necklace', 275)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/65/df/4e/65df4e593d3d4ec46f8a6602358b36e4.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">White Shell Flower Gold Necklace</h5>
+                            <p class="card-text">249 PHP
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('White Shell Flower Gold Necklace', 249)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/6b/bd/c3/6bbdc38962dd1c754d0bf90d8ad2c8ce.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">1928 Gold Tone Simulated Pearl & Pink Flower Necklace</h5>
+                            <p class="card-text">299 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('1928 Gold Tone Simulated Pearl & Pink Flower Necklace', 299)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/fe/41/dc/fe41dcd2efb06cd0649bbb142398c3ac.jpg
+" class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Small Niche Design With Advance Sense Clavicle Chain</h5>
+                            <p class="card-text">309 PHP
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Small Niche Design With Advance Sense Clavicle Chain', 309)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/564x/ab/72/e5/ab72e5b342baed8313ef43513ce3d431.jpg
+" class="card-img-top"
+                            alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Clam & Pearl Pendant Gold Plated Chain Necklace</h5>
+                            <p class="card-text">249 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Clam & Pearl Pendant Gold Plated Chain Necklace', 249)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/736x/62/f9/da/62f9dac4abbec21ac8be511d6e863dcf.jpg 
+"
+                            class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Porcelain Pendant Necklace</h5>
+                            <p class="card-text">255 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Vintage Porcelain Pendant Necklace', 255 )">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="food">
+
+                <div class="row">
+                    <h3>BRACELET</h3>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/83/ad/80/83ad803457f0b9a91c14b714acba07db.jpg
+
+            
+                    " class="card-img-top" Zalt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Madison Tyler Charm Bracelet</h5>
+                            <p class="card-text">199 PHP
+</p>
+                            <button class="btn btn-primary" onclick="pasok('Madison Tyler Charm Bracelet', 199)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/c7/f0/48/c7f0484410e77bf0a66b4e5563d7af02.jpg
+
+            " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Summer Italian Charm Bracelet</h5>
+                            <p class="card-text">299 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Summer Italian Charm Bracelet', 299)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/35/ab/62/35ab62b745cf4d41ab88fc2fdd63ebc9.jpg
+
+            " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Enamel Cuff Orange Cherry Flower Bracelet</h5>
+                            <p class="card-text">249 PHP
+
+                            </p>
+                            <button class="btn btn-primary" onclick="pasok('Enamel Cuff Orange Cherry Flower Bracelet', 249)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/1b/5e/6d/1b5e6ddabea5bd1b59ae9b4d3e746cab.jpg
+
+            " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Over Sterling Sea Life Bracelet</h5>
+                            <p class="card-text">199 PHP
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Gold Over Sterling Sea Life Bracelet', 199)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/ae/2a/8d/ae2a8d6f21763cb2a8ddc4d9b9ed0e75.jpg
+
+            " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Finish White Enamel Pink Hearts Bangle Bracelet</h5>
+                            <p class="card-text">249 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Gold Finish White Enamel Pink Hearts Bangle Bracelet', 249)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/0a/94/f9/0a94f91d59df6b175dd6675de633441e.jpg
+
+            " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Orange Flower Pearl Gold Finish Bracelet</h5>
+                            <p class="card-text">235 PHP
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Orange Flower Pearl Gold Finish Bracelet', 235)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/564x/2a/13/66/2a136602f6dfd3e7690bd8e168cfc98c.jpg
+"
+                            alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Plated Multi-Colored Synthetic Sapphire Bracelet</h5>
+                            <p class="card-text">299 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Gold Plated Multi-Colored Synthetic Sapphire Bracelet', 299 )">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/89/7d/52/897d527d877277e131cf0848ad7185a1.jpg
+"
+                            class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Coastal Charm Bracelet </h5>
+                            <p class="card-text">249 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Coastal Charm Bracelet', 249)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="food">
+            
+                <div class="row">
+                    <h3>RING</h3>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/564x/9b/c2/d3/9bc2d3c23f3a487e0bd3e138f1d8ba98.jpg
+
+            
+                        
+                                " class="card-img-top" Zalt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold-Plated Sea Turtle Ring</h5>
+                            <p class="card-text">210 PHP
+                            </p>
+                            <button class="btn btn-primary" onclick="pasok('Gold-Plated Sea Turtle Ring', 210)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/9a/1e/71/9a1e719f153110753df1ea05b5b94c6c.jpg
+
+            
+                        " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">S925 Sterling Silver Crystal Flower Ring</h5>
+                            <p class="card-text">199 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('S925 Sterling Silver Crystal Flower Ring', 199)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/564x/09/76/9a/09769ac3992ee33c8475f6224c6b5ea3.jpg
+
+            
+                        " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicgrowth Shell Ring</h5>
+                            <p class="card-text">235 PHP
+            
+                            </p>
+                            <button class="btn btn-primary" onclick="pasok('Chicgrowth Shell Ring', 235)">Add
+                                to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/9c/c0/4c/9cc04c22325454da8804a3eec112d8e6.jpg
+
+            
+                        " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Dainty Blue Topaz Flower Gold Ring</h5>
+                            <p class="card-text">199 PHP
+                            </p>
+                            <button class="btn btn-primary" onclick="pasok('Dainty Blue Topaz Flower Gold Ring', 199)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/ce/9c/26/ce9c26e5b8dc13a9fcaed01010c5e3f9.jpg
+
+            
+                        " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Hawaiian Gardens Hibiscus Ring</h5>
+                            <p class="card-text">179 PHP</p>
+                            <button class="btn btn-primary"
+                                onclick="pasok('Hawaiian Gardens Hibiscus Ring', 179)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/99/83/df/9983dfcb435f2a3a0b7ad0f671eda2e0.jpg
+
+            
+                        " class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Oceanic Elegance Gold Finish Ring</h5>
+                            <p class="card-text">170 PHP
+                            </p>
+                            <button class="btn btn-primary" onclick="pasok('Oceanic Elegance Gold Finish Ring', 170)">Add
+                                to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/564x/ba/40/1f/ba401f2c5c6f3ce1179393645be46161.jpg
+" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Shark & Anchor Gold Plated Ring</h5>
+                            <p class="card-text">200 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('Shark & Anchor Gold Plated Ring', 200 )">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="	https://i.pinimg.com/736x/cf/de/63/cfde63e4e3c67daaf612ee7a8d796842.jpg 
+"
+                            class="card-img-top" alt="Iphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Baroque Pearl Cocktail Ring</h5>
+                            <p class="card-text">239 PHP</p>
+                            <button class="btn btn-primary" onclick="pasok('GUCCI ring', 239)">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

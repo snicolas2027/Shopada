@@ -1,0 +1,63 @@
+body {
+    background-image: url('Pictures/COVER.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0px; 
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0, 85, 212);
+    font-size: 60px;
+    margin-top: 0%;
+}
+
+div.border {
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    min-width: 400px;
+    max-width: 500px;
+    height: 200px;
+    font-size: 19px;
+    border-radius: 30px;
+    border: 1px solid none;
+    background: #006eff41;
+    align-content: center;
+    margin: auto;
+    padding: 1.5rem;
+    overflow:visible;
+}
+
+hr {
+    margin-bottom:0%;
+    border: 1px solid rgba(0, 85, 212, 0.205);
+    border-radius: 1px;
+}
+
+ul li a {
+    color:#0d3c94;
+    cursor:pointer; 
+}
+    
+ul li p {
+    white-space:nowrap;
+    display: none;
+}
+    
+ul li img {
+    width:60px;
+    margin-right:0px;
+    margin-top: 0px;
+}
+
+ul {
+    list-style:none;
+    padding:40px;
+}
